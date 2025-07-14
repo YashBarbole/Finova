@@ -1,10 +1,12 @@
 import { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -20,9 +22,7 @@ export default function Login() {
 
       // store token in localStorage
       localStorage.setItem("token", token);
-
-      alert("✅ Login successful!");
-      // redirect if needed
+      navigate("/dashboard", { replace: true });
     } catch (err) {
       console.error(err);
       setErrorMsg(err.response?.data?.msg || "Login failed");

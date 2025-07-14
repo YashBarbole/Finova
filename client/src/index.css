@@ -1,8 +1,11 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
 
 body {
   background-color: #0f0f0f;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-weight: 300;
 }
 

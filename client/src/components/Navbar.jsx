@@ -1,21 +1,21 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+  const navigate = useNavigate();
+  const isAuth = !!localStorage.getItem("token");
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    navigate("/login", { replace: true });
+  };
+  if (!isAuth) return null;
   return (
-    <nav className=" text-white py-3 px-3 px- w-full">
-      <div className="flex items-center justify-between w-full  mx-auto">
-        {/* Left: Logo */}
-        <h1 className="text-2xl font-bold text-accent whitespace-nowrap">💳 PaySmart</h1>
-
-        {/* Right: Navigation Links */}
-        <div className="flex gap-6 text-xl font-medium whitespace-nowrap">
-          <Link to="/" className="hover:text-accent">Login</Link>
-          <Link to="/register" className="hover:text-accent">Register</Link>
-          <Link to="/send" className="hover:text-accent">Send</Link>
-          <Link to="/group-pay" className="hover:text-accent">Group Pay</Link>
-          <Link to="/history" className="hover:text-accent">History</Link>
-        </div>
-      </div>
-    </nav>
+    <div className="w-full flex justify-end p-4">
+      <button
+        onClick={handleLogout}
+        className="bg-red-500 hover:bg-red-600 text-white font-semibold px-4 py-1 rounded shadow"
+      >
+        Logout
+      </button>
+    </div>
   );
 }

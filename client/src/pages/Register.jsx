@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function Register() {
   const [name, setName] = useState("");
@@ -9,6 +10,7 @@ export default function Register() {
 
   const [errorMsg, setErrorMsg] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
+  const navigate = useNavigate();
 
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -28,6 +30,7 @@ export default function Register() {
       setEmail("");
       setPassword("");
       setPin("");
+      setTimeout(() => navigate("/login"), 1000);
     } catch (err) {
       console.error(err);
       setErrorMsg(err.response?.data?.msg || "Something went wrong");

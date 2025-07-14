@@ -1,7 +1,9 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const dotenv = require("dotenv");
-const cors = require("cors");
+import express from "express";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+import cors from "cors";
+import authRoutes from "./routes/authRoutes.js";
+import transactionRoutes from "./routes/transactionRoutes.js";
 
 // config
 dotenv.config();
@@ -38,9 +40,7 @@ mongoose
 
 
 
-const authRoutes = require("./routes/authRoutes");
 app.use("/api", authRoutes);
 
 
-const transactionRoutes = require("./routes/transactionRoutes");
 app.use("/api", transactionRoutes);
