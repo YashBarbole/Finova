@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-[80vh] text-white">
-      <h1 className="text-4xl font-bold mb-4 text-accent">Welcome to PaySmart 💳</h1>
+      <h1 className="text-4xl font-bold mb-4 text-accent">Welcome to Finova 💳</h1>
       <p className="max-w-xl text-center mb-8 text-lg text-gray-300">
         PaySmart is your all-in-one digital wallet for fast, secure, and easy money transfers. Send money to friends, split group expenses, and track your transaction history—all in one place!
       </p>
