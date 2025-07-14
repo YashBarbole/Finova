@@ -112,19 +112,19 @@ npm start
 
 
 <p align="center">
-  <img src="public/land.png" alt="landing page" width="700"/>
+  <img src="client/public/land.png" alt="landing page" width="700"/>
 </p>
 
 <p align="center">
-  <img src="public/dash.png" alt="Dashboard Screenshot" width="700"/>
+  <img src="client/public/dash.png" alt="Dashboard Screenshot" width="700"/>
 </p>
 
 <p align="center">
-  <img src="public/send.png" alt="money sent" width="700"/>
+  <img src="client/public/send.png" alt="money sent" width="700"/>
 </p>
 
 <p align="center">
-  <img src="public/history.png" alt="history" width="400"/>
+  <img src="client/public/history.png" alt="history" width="400"/>
 </p>
 
 ## 👨‍💻 Author
