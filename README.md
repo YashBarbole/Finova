@@ -112,7 +112,7 @@ npm start
 
 
 <p align="center">
-  <img src="images/land.png" alt="landing page" width="700"/>
+  <img src="images/land2.png" alt="landing page" width="700"/>
 </p>
 
 <p align="center">
