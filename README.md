@@ -110,14 +110,10 @@ npm start
 ---
 
 ## 👨‍💻 Author
-
 **Your Name**  
 Aspiring Fintech Developer | MERN Stack | Security-Oriented Projects  
-Email: your@email.com  
-GitHub: [your-username](https://github.com/your-username)
+Email: yashbarbole7110@email.com  
+
 
 ---
 
-## 📢 License
-
-This project is for educational & portfolio use only.
