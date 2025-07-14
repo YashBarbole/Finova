@@ -1,4 +1,4 @@
-# 💳 PaySmart – Mock Payment Gateway (MERN Stack)
+# 💳 PaySmart – Your digital vault for everyday payments.
 
 **PaySmart** is a secure mock payment gateway built with the MERN stack (MongoDB, Express, React, Node.js).  
 It allows users to manage wallet balances, send money to other users, and view transaction history with security features like PIN verification, balance validation, account lock, and rate limiting.
@@ -110,7 +110,7 @@ npm start
 ---
 
 ## 👨‍💻 Author
-**Your Name**  
+**Yash Barbole** 
 Aspiring Fintech Developer | MERN Stack | Security-Oriented Projects  
 Email: yashbarbole7110@email.com  
 
