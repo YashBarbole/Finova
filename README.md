@@ -1,4 +1,4 @@
-# 💳 PaySmart – Your digital vault for everyday payments.
+# 💳 Finova – Your digital vault for everyday payments.
 
 **PaySmart** is a secure mock payment gateway built with the MERN stack (MongoDB, Express, React, Node.js).  
 It allows users to manage wallet balances, send money to other users, and view transaction history with security features like PIN verification, balance validation, account lock, and rate limiting.
