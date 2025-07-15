@@ -1,6 +1,6 @@
 # 💳 Finova – Your digital vault for everyday payments.
 
-**PaySmart** is a secure mock payment gateway built with the MERN stack (MongoDB, Express, React, Node.js).  
+**Finova** is a secure mock payment gateway built with the MERN stack (MongoDB, Express, React, Node.js).  
 It allows users to manage wallet balances, send money to other users, and view transaction history with security features like PIN verification, balance validation, account lock, and rate limiting.
 
 ---
@@ -30,7 +30,7 @@ It allows users to manage wallet balances, send money to other users, and view t
 
 ## 📁 Folder Structure
 
-PaySmart/
+Finova/
 ├── client/          # React Frontend  
 │   └── src/  
 │       ├── pages/  
@@ -64,7 +64,7 @@ PaySmart/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/PaySmart.git
+git clone https://github.com/your-username/Finova.git
 cd PaySmart
 ```
 
