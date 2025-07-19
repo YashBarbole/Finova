@@ -70,7 +70,7 @@ export const getBalance = async (req, res) => {
     res.status(500).json({ msg: "Server error" });
   }
 };
-
+// get transcation 
 export const getTransactions = async (req, res) => {
   try {
     const userId = req.user.userId;

@@ -38,7 +38,7 @@ export const registerUser = async (req, res) => {
     res.status(500).json({ msg: "Server error" });
   }
 };
-
+//login user 
 export const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
