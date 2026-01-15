@@ -10,10 +10,10 @@ export const sendMoney = async (req, res) => {
     const { receiverEmail, amount, pin } = req.body;
     const sender = await User.findById(senderId);
     const receiver = await User.findOne({ email: receiverEmail });
-    if (!receiver) {
-      await Transaction.create({ sender: senderId, receiver: null, amount, status: "failed" });
-      return res.status(404).json({ msg: "Receiver not found" });
-    }
+   if (!receiver) {
+  return res.status(404).json({ msg: "Receiver not found" });
+}
+
     // Check if account is locked
     if (sender.isLocked && sender.lockedUntil > Date.now()) {
       await Transaction.create({ sender: senderId, receiver: receiver._id, amount, status: "failed" });

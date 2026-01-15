@@ -22,20 +22,16 @@ app.get("/", (req, res) => {
 
 
 // db connect + start server
+// START SERVER FIRST
+app.listen(PORT, () => {
+  console.log(`✅ Server running on port ${PORT}`);
+});
+
+// CONNECT MONGO SEPARATELY
 mongoose
-  .connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    console.log("✅ MongoDB Connected");
-    app.listen(PORT, () => {
-      console.log(`✅ Server running on port ${PORT}`);
-    });
-  })
-  .catch((err) => {
-    console.error("❌ Mongo Error:", err);
-  });
+  .connect(process.env.MONGO_URI)
+  .then(() => console.log("✅ MongoDB Connected"))
+  .catch((err) => console.error("❌ Mongo Error:", err));
 
 
 
