@@ -60,7 +60,7 @@ export const sendMoney = async (req, res) => {
     res.status(500).json({ msg: "Server error" });
   }
 };
-
+//get balance 
 export const getBalance = async (req, res) => {
   try {
     const user = await User.findById(req.user.userId);
@@ -70,7 +70,7 @@ export const getBalance = async (req, res) => {
     res.status(500).json({ msg: "Server error" });
   }
 };
-
+// get transcation 
 export const getTransactions = async (req, res) => {
   try {
     const userId = req.user.userId;
