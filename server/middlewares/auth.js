@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 const protect = (req, res, next) => {
   const token = req.headers.authorization;
 
-  if (!token) return res.status(401).json({ msg: "No token, not authorized" });
+  if (!token) return res.status(401).json({ msg: "No token, not authorized yet" });
 
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
