@@ -39,7 +39,7 @@ export default function Dashboard() {
             info={loading ? "Loading..." : error ? error : `\u20b9 ${balance}`}
           />
           <Card
-            title="Send Money"
+            title="Send Moneyy"
             description="Quickly transfer money to friends and family with just a few clicks. Secure and instant!"
             buttonText="Send Money"
             to="/send"
